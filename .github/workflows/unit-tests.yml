@@ -12,12 +12,6 @@ on:
       - "dependencies.txt"
   pull_request:
     branches: [main, develop]
-    paths:
-      - "**/*.cs"
-      - "**/*.csproj"
-      - "**/*.sln*"
-      - ".ci/tests/**"
-      - "dependencies.txt"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
