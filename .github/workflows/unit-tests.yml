@@ -12,12 +12,6 @@ on:
       - "dependencies.txt"
   pull_request:
     branches: [main, develop]
-    paths:
-      - "**/*.cs"
-      - "**/*.csproj"
-      - "**/*.sln*"
-      - ".ci/tests/**"
-      - "dependencies.txt"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -30,10 +24,10 @@ permissions:
 
 jobs:
   ci:
-    uses: BuroHappoldEngineeringSandbox/DevOps_Toolkit/.github/workflows/ci.yml@main
+    uses: BuroHappoldEngineeringSandbox/DevOps_Toolkit/.github/workflows/unit-tests.yml@main
     with:
       test_solution: ".ci/tests/UnitTests/UnitTests.slnx"
-      # Optional knobs (defaults shown in ci.yml):
+      # 1Optional knobs (defaults shown in unit-tests.yml):
       # dotnet_version: "10.x"
       # configuration: "Release"
       # test_max_cpu: 4
