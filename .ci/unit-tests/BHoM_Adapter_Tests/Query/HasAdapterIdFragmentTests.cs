@@ -22,7 +22,6 @@
 using BH.Engine.Adapter;
 using BH.oM.Base;
 using NUnit.Framework;
-using System;
 
 namespace BH.Tests.Engine.Adapter.Query
 {
@@ -60,9 +59,9 @@ namespace BH.Tests.Engine.Adapter.Query
         [Test]
         public void HasAdapterIdFragment_NullObject_ReturnsFalse()
         {
-            IBHoMObject? obj = null;
+            IBHoMObject obj = null;
 
-            bool result = obj!.HasAdapterIdFragment(typeof(TestFragment));
+            bool result = obj.HasAdapterIdFragment(typeof(TestFragment));
 
             Assert.That(result, Is.False);
         }
@@ -72,7 +71,7 @@ namespace BH.Tests.Engine.Adapter.Query
         {
             var obj = new CustomObject();
 
-            bool result = obj.HasAdapterIdFragment(null!);
+            bool result = obj.HasAdapterIdFragment(null);
 
             Assert.That(result, Is.False);
         }

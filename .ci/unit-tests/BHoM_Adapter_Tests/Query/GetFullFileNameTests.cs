@@ -43,8 +43,8 @@ namespace BH.Tests.Engine.Adapter.Query
         [Test]
         public void GetFullFileName_NullSettings_ReturnsEmptyString()
         {
-            FileSettings? settings = null;
-            string result = settings!.GetFullFileName();
+            FileSettings settings = null;
+            string result = settings.GetFullFileName();
             Assert.That(result, Is.EqualTo(string.Empty));
         }
 
