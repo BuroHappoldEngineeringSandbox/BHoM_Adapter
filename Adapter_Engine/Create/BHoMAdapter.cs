@@ -34,7 +34,7 @@ namespace BH.Engine.Adapter
     public static partial class Create
     {
         /***************************************************/
-        /**** Public Methods                            s***/
+        /**** Public Methods                            ss***/
         /***************************************************/
 
         [Description("Creates an adapter of the specified type. Method makes use of the constructor with the largest number of arguments. Tries to match the provided arguments to best fit the arguments of the constructor.")]
