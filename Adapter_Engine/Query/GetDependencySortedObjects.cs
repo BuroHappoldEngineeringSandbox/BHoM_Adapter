@@ -21,8 +21,6 @@
  */
 
 using BH.oM.Base;
-using BH.Engine.Base;
-using BH.oM.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,7 +28,6 @@ using System.Linq;
 using BH.oM.Adapter;
 using BH.oM.Base.Attributes;
 using BH.Engine.Reflection;
-using System.Reflection;
 
 namespace BH.Engine.Adapter
 {
@@ -57,7 +54,7 @@ namespace BH.Engine.Adapter
             Dictionary<Tuple<Type, PushType>, List<IBHoMObject>> allObjectsPerType = GetObjectsAndRecursiveDependencies(objects, pushType, bHoMAdapter);
 
             // Sort the groups by dependency order, so they can be pushed in the correct order.
-            List<Tuple<Type, PushType, IEnumerable<object>>> baseTypeGroupObjects = allObjectsPerType.Select(x => new Tuple<Type, PushType, IEnumerable<object>> (x.Key.Item1, x.Key.Item2, x.Value )).ToList();
+            List<Tuple<Type, PushType, IEnumerable<object>>> baseTypeGroupObjects = allObjectsPerType.Select(x => new Tuple<Type, PushType, IEnumerable<object>>(x.Key.Item1, x.Key.Item2, x.Value)).ToList();
 
             // Group per base type extracted from dependencies.
             // This is useful to reduce the number of CRUD calls.

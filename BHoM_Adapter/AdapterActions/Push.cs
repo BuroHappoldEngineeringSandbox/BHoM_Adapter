@@ -22,16 +22,11 @@
 
 using BH.oM.Base;
 using BH.oM.Adapter;
-using BH.Engine.Reflection;
-using BH.Engine.Base;
-using BH.Engine.Adapter;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.ComponentModel;
-using System.Collections.ObjectModel;
 
 namespace BH.Adapter
 {
@@ -93,7 +88,7 @@ namespace BH.Adapter
 
             List<Tuple<Type, PushType, IEnumerable<object>>> orderedObjects;
 
-            if(m_AdapterSettings.HandleDependencies)
+            if (m_AdapterSettings.HandleDependencies)
             {
                 orderedObjects = Engine.Adapter.Query.GetDependencySortedObjects(objectsToPush, pushType, this);
             }

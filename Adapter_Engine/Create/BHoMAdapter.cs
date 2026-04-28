@@ -25,7 +25,6 @@ using System.Linq;
 using System.Collections.Generic;
 using System.ComponentModel;
 using BH.oM.Base.Attributes;
-using BH.oM.Base;
 using BH.oM.Adapter;
 using System.Reflection;
 
@@ -34,7 +33,7 @@ namespace BH.Engine.Adapter
     public static partial class Create
     {
         /***************************************************/
-        /**** Public Methods                            ****/
+        /**** Public Methods                            S***/
         /***************************************************/
 
         [Description("Creates an adapter of the specified type. Method makes use of the constructor with the largest number of arguments. Tries to match the provided arguments to best fit the arguments of the constructor.")]

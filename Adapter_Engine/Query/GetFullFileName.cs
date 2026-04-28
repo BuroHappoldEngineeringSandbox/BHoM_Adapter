@@ -21,11 +21,7 @@
  */
 
 using BH.oM.Adapter;
-using BH.oM.Base;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Reflection;
 using BH.oM.Base.Attributes;
 
 namespace BH.Engine.Adapter
@@ -37,7 +33,7 @@ namespace BH.Engine.Adapter
         [Output("fullFilePath", "The full file path for the file settings")]
         public static string GetFullFileName(this FileSettings fileSettings)
         {
-            if(fileSettings == null)
+            if (fileSettings == null)
             {
                 BH.Engine.Base.Compute.RecordError("Cannot query the full file name from a null set of file settings.");
                 return "";

@@ -26,8 +26,6 @@ using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
 using BH.oM.Data.Requests;
-using BH.oM.Base.Attributes;
-using BH.oM.Analytical.Results;
 using BH.oM.Adapter;
 
 namespace BH.Adapter

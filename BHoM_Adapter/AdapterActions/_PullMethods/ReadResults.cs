@@ -20,13 +20,8 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
-using BH.oM.Base;
-using System;
 using System.Collections.Generic;
-using System.Collections;
-using System.Linq;
 using BH.oM.Data.Requests;
-using BH.oM.Base.Attributes;
 using BH.oM.Analytical.Results;
 using BH.oM.Adapter;
 
@@ -56,12 +51,12 @@ namespace BH.Adapter
             BH.Engine.Base.Compute.RecordError($"ReadResults for {request.GetType().Name} is not implemented in {(this as dynamic).GetType().Name}.");
             return new List<IResult>();
         }
-   
+
         /******* Additional Wrapper methods *******/
         /* These methods contain some additional logic to avoid boilerplate.
            If needed, they can be overriden at the Toolkit level, but the new implementation must always call the appropriate Basic Method. */
 
-     
+
     }
 }
 

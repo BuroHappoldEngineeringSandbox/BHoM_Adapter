@@ -20,13 +20,10 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
-using BH.oM.Base;
 using BH.oM.Adapter;
 using System;
 using System.Collections.Generic;
-using System.Reflection;
 using System.ComponentModel;
-using BH.oM.Base.Attributes;
 
 namespace BH.Adapter
 {
@@ -44,7 +41,7 @@ namespace BH.Adapter
         [Description("Object comparers to be used within a specific Adapter." +
             "E.g. A Structural Node can be compared only using its geometrical location." +
             "Needed because different software need different rules for comparing objects.")]
-        public Dictionary<Type, object> AdapterComparers { get; protected set; } =  new Dictionary<Type, object>
+        public Dictionary<Type, object> AdapterComparers { get; protected set; } = new Dictionary<Type, object>
         {
             // In your adapter constructor, populate this with values like:
             // {typeof(Node), new BH.Engine.Structure.NodeDistanceComparer(3) }

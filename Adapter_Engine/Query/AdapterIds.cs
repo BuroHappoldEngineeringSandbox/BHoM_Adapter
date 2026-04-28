@@ -20,15 +20,12 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
-using BH.oM.Adapter;
 using BH.oM.Base;
 using BH.Engine.Base;
-using BH.oM.Base.Attributes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
-using System.Reflection;
 
 
 namespace BH.Engine.Adapter
@@ -44,7 +41,7 @@ namespace BH.Engine.Adapter
             "If none is found, `null` is returned.")]
         public static object AdapterIds(this IBHoMObject bHoMObject, Type adapterIdFragmentType = null)
         {
-            if(bHoMObject == null)
+            if (bHoMObject == null)
             {
                 BH.Engine.Base.Compute.RecordError("Cannot query the adapter IDs for a null object.");
                 return null;

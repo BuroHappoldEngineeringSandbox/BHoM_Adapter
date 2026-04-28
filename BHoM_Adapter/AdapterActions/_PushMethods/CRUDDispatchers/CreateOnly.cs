@@ -22,10 +22,7 @@
 
 using BH.oM.Base;
 using BH.Engine.Base;
-using BH.oM.Data.Collections;
 using BH.Engine.Adapter;
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -71,7 +68,7 @@ namespace BH.Adapter
                 if (!CreateAndCache(newObjects, actionConfig))
                     return false;
             }
-            else if(!ICreate(newObjects, actionConfig))
+            else if (!ICreate(newObjects, actionConfig))
                 return false;
 
             if (callDistinct && m_AdapterSettings.UseAdapterId && distinctGroups != null)

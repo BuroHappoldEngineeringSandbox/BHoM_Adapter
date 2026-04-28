@@ -21,11 +21,7 @@
  */
 
 using BH.oM.Base;
-using System;
 using System.Collections.Generic;
-using System.Collections;
-using System.Linq;
-using BH.oM.Data.Requests;
 using BH.oM.Adapter;
 
 namespace BH.Adapter
@@ -48,7 +44,7 @@ namespace BH.Adapter
             // To be overridden in the specific adapter. 
             // It must only include a dynamic dispatch to your type-specific Create implementations, in other words:
             // Create(objects as dynamic);
-            return false;  
+            return false;
         }
 
         // Write your type-specific implementations of Create in your Toolkit, like

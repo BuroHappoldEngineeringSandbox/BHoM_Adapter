@@ -20,14 +20,9 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
-using BH.oM.Base;
 using BH.oM.Adapter;
-using System;
-using System.Collections.Generic;
-using System.Reflection;
 using System.ComponentModel;
 using BH.oM.Structure.Elements;
-using BH.oM.Structure.SectionProperties;
 using BH.Engine.Structure;
 using BH.Engine.Geometry;
 
@@ -48,7 +43,7 @@ namespace BH.Adapter.Modules
                 {
                     string desc1 = target.Support.Description();
                     string desc2 = source.Support.Description();
-                    if(desc1 != desc2)
+                    if (desc1 != desc2)
                         Engine.Base.Compute.RecordNote($"Node in position ({target.Position.X},{target.Position.Y},{target.Position.Z}) contains conflicting supports. Support {desc1} will be used on the node.");
                 }
             }
@@ -58,7 +53,7 @@ namespace BH.Adapter.Modules
             {
                 if (target.Orientation == null)
                     target.Orientation = source.Orientation;
-                else if(!source.Orientation.IsEqual(target.Orientation))
+                else if (!source.Orientation.IsEqual(target.Orientation))
                     BH.Engine.Base.Compute.RecordNote($"Node in position ({target.Position.X}, {target.Position.Y}, {target.Position.Z}) contains conflicting orientaions. Orientation with Normal vector ({target.Orientation.Z.X}, {target.Orientation.Z.Y}, {target.Orientation.Z.Z}) will be used on the node.");
             }
         }

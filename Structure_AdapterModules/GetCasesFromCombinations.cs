@@ -20,15 +20,11 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
-using BH.oM.Base;
 using BH.oM.Adapter;
-using System;
 using System.Linq;
 using System.Collections.Generic;
-using System.Reflection;
 using System.ComponentModel;
 using BH.oM.Structure.Loads;
-using System.Collections;
 
 namespace BH.Adapter.Modules.Structure
 {

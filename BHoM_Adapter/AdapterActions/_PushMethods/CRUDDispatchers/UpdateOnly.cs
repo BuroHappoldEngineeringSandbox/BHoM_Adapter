@@ -21,10 +21,6 @@
  */
 
 using BH.oM.Base;
-using BH.oM.Data.Collections;
-using BH.Engine.Adapter;
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -40,14 +36,14 @@ namespace BH.Adapter
         // These methods dispatch calls to different CRUD methods as required by the Push.
 
         [Description("Performs the only the Update for the specified objects and, if Config.HandleDependencies is true, does the full CRUD for their dependencies.")]
-        protected virtual bool UpdateOnly<T>(IEnumerable<T> objectsToPush, string tag = "",  ActionConfig actionConfig = null) where T : IBHoMObject
+        protected virtual bool UpdateOnly<T>(IEnumerable<T> objectsToPush, string tag = "", ActionConfig actionConfig = null) where T : IBHoMObject
         {
             List<T> newObjects = objectsToPush.ToList();
 
             // Make sure objects are tagged
             if (tag != "")
                 newObjects.ForEach(x => x.Tags.Add(tag));
-            
+
             if (m_AdapterSettings.CacheCRUDobjects)
                 return UpdateIncludingCache(newObjects, actionConfig);
 

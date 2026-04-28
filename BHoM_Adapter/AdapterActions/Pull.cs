@@ -20,16 +20,10 @@
  * along with this code. If not, see <https://www.gnu.org/licenses/lgpl-3.0.html>.      
  */
 
-using BH.oM.Base;
 using BH.oM.Adapter;
 using BH.oM.Data.Requests;
-using BH.Engine.Base;
-using BH.Engine.Adapter;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 using System.ComponentModel;
 
 namespace BH.Adapter

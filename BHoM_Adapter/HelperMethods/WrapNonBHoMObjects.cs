@@ -30,7 +30,7 @@ namespace BH.Adapter
     public abstract partial class BHoMAdapter
     {
         /***************************************************/
-        /**** Public Methods                            ****/ 
+        /**** Public Methods                            ****/
         /***************************************************/
 
         public IEnumerable<IBHoMObject> WrapNonBHoMObjects(IEnumerable<object> objects)
