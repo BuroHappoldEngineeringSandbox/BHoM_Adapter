@@ -9,7 +9,7 @@ If you are new (_welcome!_  👋 😄)  a great place to start is on [bhom.xyz](
 
 This particular repo contains the parent _BHoM Adapter_ defining all the base functionality for interoperability between the BHoM and other software, platforms and environments.
 
-The BHoM Adapter provides a framework to "Push" and "Pull" (or import and export) data between different applications. This includes organising explicit converts between any other language or object representation and the BHoM. See [introduction to the base adpater](https://github.com/BHoM/documentation/wiki/Introduction-to-the-BHoM_Adapter) for more details.
+The BHoM Adapter provides a framework to "Push" and "Pull" (sor import and export) data between different applications. This includes organising explicit converts between any other language or object representation and the BHoM. See [introduction to the base adpater](https://github.com/BHoM/documentation/wiki/Introduction-to-the-BHoM_Adapter) for more details.
 
 
 Along with the rest of the core repositories - [BHoM](https://github.com/BHoM/BHoM), [BHoM_Engine](https://github.com/BHoM/BHoM_Engine) and [BHoM_UI](https://github.com/BHoM/BHoM_UI) – this is the basis on which all of the BHoM Toolkits are built.
