@@ -23,11 +23,9 @@
 using BH.oM.Adapter.Module;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using BH.oM.Structure.Loads;
 using BH.oM.Base;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.ComponentModel;
 
 namespace BH.Adapter.Modules.Structure

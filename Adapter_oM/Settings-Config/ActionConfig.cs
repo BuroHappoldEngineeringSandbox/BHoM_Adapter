@@ -22,7 +22,6 @@
 
 using BH.oM.Base;
 using BH.oM.Diffing;
-using System.Collections.Generic;
 using System.ComponentModel;
 
 namespace BH.oM.Adapter

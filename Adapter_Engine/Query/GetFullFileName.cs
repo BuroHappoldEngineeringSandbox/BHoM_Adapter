@@ -21,11 +21,7 @@
  */
 
 using BH.oM.Adapter;
-using BH.oM.Base;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Reflection;
 using BH.oM.Base.Attributes;
 
 namespace BH.Engine.Adapter

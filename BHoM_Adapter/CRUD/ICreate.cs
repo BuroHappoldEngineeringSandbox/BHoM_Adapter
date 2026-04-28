@@ -21,11 +21,7 @@
  */
 
 using BH.oM.Base;
-using System;
 using System.Collections.Generic;
-using System.Collections;
-using System.Linq;
-using BH.oM.Data.Requests;
 using BH.oM.Adapter;
 
 namespace BH.Adapter

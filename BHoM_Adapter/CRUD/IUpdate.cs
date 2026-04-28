@@ -22,11 +22,9 @@
 
 using BH.oM.Adapter;
 using BH.oM.Base;
-using BH.oM.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using BH.Engine.Adapter;
 
 namespace BH.Adapter

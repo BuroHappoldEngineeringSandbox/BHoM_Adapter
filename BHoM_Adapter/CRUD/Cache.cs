@@ -25,12 +25,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
-using BH.oM.Data.Requests;
 using BH.oM.Adapter;
-using BH.Engine.Adapter;
-using System.Xml.Linq;
-using System.Runtime.InteropServices;
-using System.Runtime.CompilerServices;
 using System.ComponentModel;
 
 namespace BH.Adapter

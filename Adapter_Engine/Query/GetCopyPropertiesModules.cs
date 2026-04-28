@@ -26,7 +26,6 @@ using BH.oM.Base;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
-using System.Reflection;
 
 namespace BH.Engine.Adapter
 {

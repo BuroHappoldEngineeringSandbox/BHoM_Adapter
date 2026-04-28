@@ -22,8 +22,6 @@
 
 using BH.oM.Base;
 using BH.Engine.Base;
-using BH.oM.Data;
-using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;

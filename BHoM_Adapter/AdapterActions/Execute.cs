@@ -21,13 +21,7 @@
  */
 
 using BH.oM.Base;
-using BH.Engine.Base;
-using BH.oM.Data.Requests;
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 using System.ComponentModel;
 using BH.oM.Adapter;
 using BH.oM.Base.Attributes;

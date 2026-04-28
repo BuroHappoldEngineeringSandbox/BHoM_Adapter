@@ -22,15 +22,9 @@
 
 using BH.oM.Base;
 using BH.oM.Adapter;
-using System;
 using System.Linq;
 using System.Collections.Generic;
-using System.Reflection;
 using System.ComponentModel;
-using BH.oM.Structure.Elements;
-using System.Collections;
-using BH.oM.Geometry;
-using BH.oM.Structure.Constraints;
 using BH.oM.Structure.Loads;
 
 

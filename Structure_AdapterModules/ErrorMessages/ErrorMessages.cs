@@ -25,8 +25,6 @@ using BH.oM.Structure.Requests;
 using BH.oM.Structure.Results;
 using BH.oM.Structure.Loads;
 using System.Linq;
-using System.Collections.Generic;
-using System.ComponentModel;
 using BH.oM.Base;
 
 namespace BH.Adapter.Modules.Structure
