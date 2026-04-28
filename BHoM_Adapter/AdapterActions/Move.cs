@@ -41,7 +41,7 @@ namespace BH.Adapter
         /******************************************************/
         /* These methods represent Actions that the Adapter can complete. 
            They are publicly available in the UI as individual components, e.g. in Grasshopper, under BHoM/Adapters tab. */
-      
+
         [Description("Performs a Pull and then a Push. Useful to move data between two different software without passing it through the UI.")]
         public virtual bool Move(IBHoMAdapter to, IRequest request,
             PullType pullType = PullType.AdapterDefault, ActionConfig pullConfig = null,
@@ -60,7 +60,7 @@ namespace BH.Adapter
         /******************************************************/
 
         [Description("Performs an action prior to any move actions. For example can be used to open up a file for repeated move actions. This method is intended to be called by the context in which this Adapter is run, which typically is a UI supported by BHoM.")]
-        public virtual bool BeforeMove(IBHoMAdapter to, IRequest request, PullType pullType = PullType.AdapterDefault, ActionConfig pullConfig = null, PushType pushType = PushType.AdapterDefault,  ActionConfig actionConfig = null)
+        public virtual bool BeforeMove(IBHoMAdapter to, IRequest request, PullType pullType = PullType.AdapterDefault, ActionConfig pullConfig = null, PushType pushType = PushType.AdapterDefault, ActionConfig actionConfig = null)
         {
             m_HasRunPreMoveAction = true;
             return true;

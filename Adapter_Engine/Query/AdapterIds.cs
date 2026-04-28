@@ -44,7 +44,7 @@ namespace BH.Engine.Adapter
             "If none is found, `null` is returned.")]
         public static object AdapterIds(this IBHoMObject bHoMObject, Type adapterIdFragmentType = null)
         {
-            if(bHoMObject == null)
+            if (bHoMObject == null)
             {
                 BH.Engine.Base.Compute.RecordError("Cannot query the adapter IDs for a null object.");
                 return null;

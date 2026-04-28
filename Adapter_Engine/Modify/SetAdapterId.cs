@@ -40,7 +40,7 @@ namespace BH.Engine.Adapter
 
         public static void SetAdapterId<T>(this IBHoMObject bHoMObject, Type adapterIdFragmentType, T id)
         {
-            if(bHoMObject == null)
+            if (bHoMObject == null)
             {
                 BH.Engine.Base.Compute.RecordError("Cannot set an adapter ID to a null object.");
                 return;

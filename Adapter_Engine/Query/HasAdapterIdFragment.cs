@@ -44,7 +44,7 @@ namespace BH.Engine.Adapter
             if (iBHoMObject == null)
                 return false; //Null objects don't have fragments at all!
 
-            if(fragmentType == null)
+            if (fragmentType == null)
             {
                 BH.Engine.Base.Compute.RecordError("Cannot query whether the object has an adapter ID fragment if the fragment type is set to null.");
                 return false;

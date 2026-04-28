@@ -71,7 +71,7 @@ namespace BH.Adapter
                 if (!CreateAndCache(newObjects, actionConfig))
                     return false;
             }
-            else if(!ICreate(newObjects, actionConfig))
+            else if (!ICreate(newObjects, actionConfig))
                 return false;
 
             if (callDistinct && m_AdapterSettings.UseAdapterId && distinctGroups != null)

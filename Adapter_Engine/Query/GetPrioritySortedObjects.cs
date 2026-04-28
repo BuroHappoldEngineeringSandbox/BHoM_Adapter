@@ -51,7 +51,7 @@ namespace BH.Engine.Adapter
         {
             List<Type> priorityTypes = bHoMAdapter?.PriorityTypes;
 
-            if(objects == null || objects.Count == 0 || priorityTypes == null || priorityTypes.Count == 0)
+            if (objects == null || objects.Count == 0 || priorityTypes == null || priorityTypes.Count == 0)
                 return objects;
 
             List<Tuple<Type, PushType, IEnumerable<object>>> prioritySortedObjects = objects.ToList();
@@ -65,7 +65,7 @@ namespace BH.Engine.Adapter
                 for (int j = prioritySortedObjects.Count - 1; j >= 1; j--)
                 {
                     if (prioritySortedObjects[j].Item1 == current)
-                    { 
+                    {
                         var temp = prioritySortedObjects[j];
                         prioritySortedObjects.RemoveAt(j);
                         prioritySortedObjects.Insert(0, temp);

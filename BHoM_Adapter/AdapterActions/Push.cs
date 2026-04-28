@@ -93,7 +93,7 @@ namespace BH.Adapter
 
             List<Tuple<Type, PushType, IEnumerable<object>>> orderedObjects;
 
-            if(m_AdapterSettings.HandleDependencies)
+            if (m_AdapterSettings.HandleDependencies)
             {
                 orderedObjects = Engine.Adapter.Query.GetDependencySortedObjects(objectsToPush, pushType, this);
             }

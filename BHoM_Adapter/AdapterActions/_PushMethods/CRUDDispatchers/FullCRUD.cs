@@ -49,7 +49,7 @@ namespace BH.Adapter
                 return true;
 
             // Make sure objects are distinct and that any copy-proeprty module for the type is run
-            IEnumerable<IGrouping<T,T>> distinctGroups = GroupAndCopyProperties(objectsToPush, actionConfig);
+            IEnumerable<IGrouping<T, T>> distinctGroups = GroupAndCopyProperties(objectsToPush, actionConfig);
             List<T> newObjects = distinctGroups.Select(x => x.Key).ToList();
 
             // Add the tag if provided
@@ -250,7 +250,7 @@ namespace BH.Adapter
                     }
                 }
             }
-            else if(pushType == PushType.CreateNonExisting)
+            else if (pushType == PushType.CreateNonExisting)
             {
                 //For CreateNonExisting, the overlap objects are just kept, and not updated. To make sure tag functionality works though, 
                 //The obejcts need to get their tags (if any) updated.

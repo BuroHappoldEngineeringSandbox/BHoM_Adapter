@@ -27,7 +27,7 @@ using System.ComponentModel;
 
 namespace BH.oM.Adapter
 {
-    [Description("Configurations specific for an Adapter Action (Push, Pull, etc)."+
+    [Description("Configurations specific for an Adapter Action (Push, Pull, etc)." +
         "\nConsider that your tookit might have a more specific implementation available. Try to look for [your toolkit name]ActionConfig.")]
     public class ActionConfig : IObject
     {

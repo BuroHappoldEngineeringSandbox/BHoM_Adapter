@@ -80,7 +80,7 @@ namespace BH.Adapter
         {
             BH.Engine.Base.Compute.RecordError($"Execute is not implemented in {this.GetType().Name}.");
 
-            return new Output<List<object>, bool> { Item1 = null, Item2 = false};
+            return new Output<List<object>, bool> { Item1 = null, Item2 = false };
         }
     }
 }
