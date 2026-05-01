@@ -6,7 +6,7 @@
  * The project versioning (Git) records all such contribution source information.
  *                                           
  *                                                                              
- * The BHoM is free software: you can redistribute it and/or modify         
+ * The BHoM is free software: yosu can redistribute it and/or modify         
  * it under the terms of the GNU Lesser General Public License as published by  
  * the Free Software Foundation, either version 3.0 of the License, or          
  * (at your option) any later version.                                          
@@ -34,7 +34,7 @@ namespace BH.Engine.Adapter
     public static partial class Create
     {
         /***************************************************/
-        /**** Public Methods                            A***/
+        /**** Public Methods                            ****/
         /***************************************************/
 
         [Description("Creates an adapter of the specified type. Method makes use of the constructor with the largest number of arguments. Tries to match the provided arguments to best fit the arguments of the constructor.")]
